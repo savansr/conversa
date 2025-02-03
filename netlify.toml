@@ -1,7 +1,11 @@
 [build]
-  base = "front-end"   # Change this if your project folder has a different name
+  base    = "front-end"      # your front-end folder
   command = "npm run build"
   publish = "dist"
+
+[build.environment]
+  NODE_ENV = "production"
+  NPM_CONFIG_PRODUCTION = "false"  # Ensure devDependencies get installed
 
 [context.production.environment]
   NODE_ENV = "production"
