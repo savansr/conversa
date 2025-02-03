@@ -1,4 +1,5 @@
 [build]
+  base = "front-end"   # Change this if your project folder has a different name
   command = "npm run build"
   publish = "dist"
 
