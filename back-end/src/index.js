@@ -12,7 +12,7 @@ dotenv.config()
 
 // Update CORS configuration to be more specific
 app.use(cors({
-    origin: "http://localhost:3000",
+    origin: ["https://conversa-the-chat-app.netlify.app","http://localhost:3000"],
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization']
