@@ -8,6 +8,9 @@ const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
     origin: ["https://conversa-the-chat-app.netlify.app","http://localhost:3000"],
+    credentials: true,
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
   },
 });
 
