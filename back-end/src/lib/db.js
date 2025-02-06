@@ -2,7 +2,7 @@
 import mongoose from 'mongoose';
 
 // Define the connection string for your local MongoDB instance
-const mongoURI = 'mongodb://localhost:27017/chat_db'
+
 
 // Function to connect to the database
 export const connectDB = async () => {
