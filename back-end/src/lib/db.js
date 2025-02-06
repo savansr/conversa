@@ -1,9 +1,6 @@
 // Import the required modules
 import mongoose from 'mongoose';
 
-// Define the connection string for your local MongoDB instance
-
-
 // Function to connect to the database
 export const connectDB = async () => {
     try {
